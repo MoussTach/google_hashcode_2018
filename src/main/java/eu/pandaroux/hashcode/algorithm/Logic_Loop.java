@@ -23,31 +23,32 @@ public class Logic_Loop {
     }
     public void algo()
     {
-        for (int i = 0; i <= end_step; i++)
-        {
-            if (i >= begin_step)
-            {
-             for(int y = 0; y < distancex; y++)
-             {
-                 if (sensx > 0){
-                     System.out.println("descend");
-                 }
-                 else if(sensx < 0){
-                     System.out.println("monte");
-                 }
-                 i++;
-             }
-             for(int y = 0; y < distancey; y++)
-             {
-                    if (sensy > 0)
-                        System.out.println("gauche");
-                    else if(sensy < 0)
-                        System.out.println("droite");
-                    i++;
-             }
-            }
-            else
+        int step = 0;
+        for (step = 0; step < begin_step; step++) {
                 System.out.println("wait");
         }
+        System.out.println(step);
+        for(int y = 0; y < distancex; y++)
+        {
+            if (sensx > 0){
+                System.out.println("descend");
+            }
+                else if(sensx < 0){
+                System.out.println("monte");
+            }
+            step++;
+        }
+        System.out.println(step);
+        for(int y = 0; y < distancey; y++)
+        {
+            if (sensy > 0)
+                System.out.println("gauche");
+            else if(sensy < 0)
+                System.out.println("droite");
+            step++;
+        }
+        System.out.println(step);
+        System.out.println(end_step);
     }
 }
+
