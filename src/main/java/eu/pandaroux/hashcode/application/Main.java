@@ -2,7 +2,6 @@ package eu.pandaroux.hashcode.application;
 
 import eu.pandaroux.hashcode.parser.ParserFile;
 import eu.pandaroux.hashcode.parser.ResultData;
-import eu.pandaroux.hashcode.algorithm.Essai_class;
 import eu.pandaroux.hashcode.algorithm.Logic_Loop;
 
 public class Main {
