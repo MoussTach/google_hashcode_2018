@@ -2,6 +2,8 @@ package eu.pandaroux.hashcode.parser;
 
 public class RideData {
 
+    private int internalStep;
+
     private int start_x;
     private int start_y;
 
@@ -13,6 +15,8 @@ public class RideData {
 
     public RideData(int start_x, int start_y, int end_x, int end_y, int early_Start, int last_finish)
     {
+        internalStep = 0;
+
         this.start_x = start_x;
         this.start_y = start_y;
 
@@ -22,6 +26,15 @@ public class RideData {
         this.earlyStart = early_Start;
 
         this.lastFinish = last_finish;
+    }
+
+    public int getInternalStep() {
+        return internalStep;
+    }
+
+    public void incrementStep()
+    {
+        internalStep++;
     }
 
     public int getEnd_x() {
